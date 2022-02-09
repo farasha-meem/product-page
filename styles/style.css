@@ -8,25 +8,67 @@
     overflow: hidden;
   }
   
-  /* Navbar links */
-  #nav-bar a {
+  /* Navbar buttons */
+  #nav-bar button {
     float: left;
     display: block;
-    color: white;
+    color: rgb(228, 197, 22);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    background-color: black;
+    cursor: pointer;
+    margin-right: 10px;
+    border-color: rgb(228, 197, 22);
   }
   
   /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    #nav-bar a {
+    #nav-bar button {
       float: none;
       width: 100%;
     }
+  }
+
+  #title {
+    color:rgb(228, 197, 22);
+    float: right;
+    margin-right: 10px;
+    font-style: bold;
   }
   
   #sections {
     display: flex;
     flex-direction: column;
+  }
+
+  form {
+    bottom: 0px;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    left:0px;
+    color: rgb(228, 197, 22)
+  }
+
+  h2 {
+    color: white;
+  }
+
+  body {
+    background-image: url(/media/fret.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #submit {
+    color: rgb(228, 197, 22);
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    cursor: pointer;
+    margin-right: 10px;
+    border-color: rgb(228, 197, 22);
   }
