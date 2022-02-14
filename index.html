@@ -5,36 +5,60 @@
         <script src="scripts/script.js"></script> 
     </head>
     <body>
-        <header id="header"> <img src="" id="header-img" alt="guitar"> 
-            <nav id="nav-bar">
-              <button id="home-button" class="nav-button" onclick="showSection('home')"> Home </button>
-              <button id="electric-button" class="nav-button" onclick="showSection('electric')"> Electric Guitars </button>
-              <button id="acoustic-button" class="nav-button" onclick="showSection('acoustic')"> Acoustic Guitars </button>
-              <button id="accessories-button" class="nav-button" onclick="showSection('accessories')"> Guitar Accessories </button>
-              <p id="title">GUITAR WORLD</p>
-            </nav>
+        <header id="header"> 
+          <h1 id="title">GUITAR WORLD</h1> <img src="media/music.svg">
           </header>
-        
-          
-        <div id="sections">
 
-          <section id="home" style="display:block;"> 
-            <h2>Best Guitars In Town! </h1> 
-            <iframe id="video" width="320" height="240" src="https://www.youtube.com/embed/21UOk_kzBCk"></iframe>
+          <section id="body-section">
+          
+            
+          <div id="sections">
+  
+            <section id="home" style="display:block;"> 
+              <h2>Best Guitars In Town! </h1> 
+              <iframe id="video" src="https://www.youtube.com/embed/21UOk_kzBCk"></iframe>
+              <div> <p style="    color: #ffe100;
+                text-align: center;">Our state of the art products make for seemless, smooth sounding melodies, check out the different categories of products on the right!</p> </div>
+            </section>
+  
+            <section id="electric" style="display:none;"> 
+              <h2> Electric Guitars </h2>
+              <div class="content">
+                <img src="media/electric_guitar.jpeg" class="image"> <p> Fender Stratocaster <br> Price: $500 </p>
+              </div>
+            </section>
+            
+            <section id="acoustic" style="display:none;"> 
+              <h2> Acoustic Guitars </h2> 
+              <div class="content">
+                <img src="media/acoustic_guitar.jpeg" class="image"> <p> Signature Semi Acoustic (Black) <br> Price: $150 </p>
+              </div>
+              <div class="content";>
+                <img src="media/guitar_sitting.jpeg"  class="image"> <p> Signature Semi Acoustic (Rosewood) <br> Price: $200 </p>
+              </div>
+            </section>
+            
+            <section id="accessories" style="display:none;"> 
+              <h2> Guitar Accessories </h2> 
+              <div> <p style="    color: #ffe100;
+                text-align: center;">Sorry, there are no available accessories in stock right now.</p> </div>
+            </section>
+          </div>
+
+          <img id="guitar-neck" src="media/guitar_neck.png">
+
+          <nav id="nav-bar">
+            <button id="home-button" class="nav-button" onclick="showSection('home')"> Home </button>
+            <button id="electric-button" class="nav-button" onclick="showSection('electric')"> Electric </button>
+            <button id="acoustic-button" class="nav-button" onclick="showSection('acoustic')"> Acoustic </button>
+            <button id="accessories-button" class="nav-button" onclick="showSection('accessories')"> Accessories </button>
+          </nav>
+
+
+
           </section>
 
-          <section id="electric" style="display:none;"> 
-            <h2> Electric Guitars </h2>
-          </section>
-          
-          <section id="acoustic" style="display:none;"> 
-            <h2> Acoustic Guitars </h2> 
-          </section>
-          
-          <section id="accessories" style="display:none;"> 
-            <h2> Guitar Accessories </h2> 
-          </section>
-        </div>
+
           
           <form id="form" action=" https://www.freecodecamp.com/email-submit">
             <label for="email"> Submit your email in order to be informed about latest products and deals! </label>

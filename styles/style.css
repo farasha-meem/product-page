@@ -1,25 +1,40 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 #nav-bar {
-    position: fixed;
-    top: 0px;
-    background-color: black;
+    float:right;
+    background-color: transparent;
     z-index: 2;
-    width: 100%;
-    margin-left: -8px;
     overflow: hidden;
+    position: fixed;
+    right:30px;
+    top: 60px;
   }
   
   /* Navbar buttons */
   #nav-bar button {
-    float: left;
     display: block;
-    color: rgb(228, 197, 22);
+    color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     background-color: black;
     cursor: pointer;
     margin-right: 10px;
-    border-color: rgb(228, 197, 22);
+    border-bottom-color: white;
+    border-left-color: black;
+    border-width: 3px;
+    width: 82px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  #nav-bar button:hover {
+    color: rgb(228, 197, 22);
   }
   
   /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
@@ -30,16 +45,22 @@
     }
   }
 
+  #header {
+    background-color: black;
+    display: flex;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    justify-content: center;
+  }
+
   #title {
     color:rgb(228, 197, 22);
-    float: right;
     margin-right: 10px;
-    font-style: bold;
-  }
-  
-  #sections {
-    display: flex;
-    flex-direction: column;
+    font-stretch: extra-expanded;
+    margin-top:5px;
   }
 
   form {
@@ -54,13 +75,18 @@
   }
 
   h2 {
-    color: white;
+    color: black;
+    background-color: rgb(228, 197, 22);
+    text-align: center;
+    margin-right:20px;
+    width:100%;
   }
 
   body {
     background-image: url(/media/fret.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
   }
 
   #submit {
@@ -71,4 +97,66 @@
     cursor: pointer;
     margin-right: 10px;
     border-color: rgb(228, 197, 22);
+  }
+
+  #body-section {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height: 100%;
+  }
+
+  #sections {
+    float:left;
+    margin-top: 50px;
+  }
+
+  #sections > section {
+    height:90%;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 75vw;
+    background-color: #00000052;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #guitar-neck {
+    height:200px;
+    width: 1;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .content {
+   display: flex;
+   flex-direction: row;
+   align-self: center;
+   border: solid white;
+   margin-bottom: 10px;
+   position: relative;
+  width: 100%;
+  }
+
+  .content > p {
+    color: white;
+    margin-left: 10px;
+    padding-top: 150px;
+    padding-right: 10px;
+    font-size: larger;
+  }
+
+  .image {
+    width: 50%;
+    height: 400px;
+  }
+
+  iframe {
+        height: 75%;
+        width: 100%;
+        position: relative;
+        border: 0px;
   }

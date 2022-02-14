@@ -6,7 +6,7 @@ function showSection(section) {
             sections[i].style.display = "none";
         }
         else {
-            sections[i].style.display = "block";
+            sections[i].style.display = "flex";
         }
     }
 }
